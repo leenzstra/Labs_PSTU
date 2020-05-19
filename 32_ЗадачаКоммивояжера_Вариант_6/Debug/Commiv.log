@@ -1,0 +1,29 @@
+﻿  Commiv.cpp
+  graph.cpp
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(168,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(169,25): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(308,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(333,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(341,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(376,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(379,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(410,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(413,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(458,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(461,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(505,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(508,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(539,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(542,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(573,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(576,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(610,31): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(622,31): warning C4305: аргумент: усечение из "double" в "GLfloat"
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(737,9): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(738,9): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(953,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(961,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(965,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\graph.cpp(1028,23): warning C4018: <: несоответствие типов со знаком и без знака
+  Создание кода...
+  Commiv.vcxproj -> C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\Debug\Commiv.exe
