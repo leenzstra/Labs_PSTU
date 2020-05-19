@@ -3,22 +3,22 @@
 #include <complex>
 using namespace std;
 
-complex<double> ACompl;		//коэф А
-complex<double> BCompl;		//коэф В
-complex<double> CCompl;		//коэф С
-complex<double> Discr;		//дискриминант
+complex<double> ACompl;		//РєРѕСЌС„ Рђ
+complex<double> BCompl;		//РєРѕСЌС„ Р’
+complex<double> CCompl;		//РєРѕСЌС„ РЎ
+complex<double> Discr;		//РґРёСЃРєСЂРёРјРёРЅР°РЅС‚
 
-string checkEquationCompl = "1234567890-+.i()";	//проверка на ошибки
-string ErrorCheckCompl;		//ошибка
+string checkEquationCompl = "1234567890-+.i()";	//РїСЂРѕРІРµСЂРєР° РЅР° РѕС€РёР±РєРё
+string ErrorCheckCompl;		//РѕС€РёР±РєР°
 
-string sx1RCompl;		//действ. часть 1 корня
-string sx1ICompl;		//мним. часть 1 корня
-string sx2RCompl;		//действ. часть 2 корня
-string sx2ICompl;		//мним. часть 2 корня
-string discrim1;		//действ. часть дискр
-string discrim2;		//мним. часть дискр
+string sx1RCompl;		//РґРµР№СЃС‚РІ. С‡Р°СЃС‚СЊ 1 РєРѕСЂРЅСЏ
+string sx1ICompl;		//РјРЅРёРј. С‡Р°СЃС‚СЊ 1 РєРѕСЂРЅСЏ
+string sx2RCompl;		//РґРµР№СЃС‚РІ. С‡Р°СЃС‚СЊ 2 РєРѕСЂРЅСЏ
+string sx2ICompl;		//РјРЅРёРј. С‡Р°СЃС‚СЊ 2 РєРѕСЂРЅСЏ
+string discrim1;		//РґРµР№СЃС‚РІ. С‡Р°СЃС‚СЊ РґРёСЃРєСЂ
+string discrim2;		//РјРЅРёРј. С‡Р°СЃС‚СЊ РґРёСЃРєСЂ
 
-string deleteBracketsCompl(string s)	//удаление пробелов и скобок
+string deleteBracketsCompl(string s)	//СѓРґР°Р»РµРЅРёРµ РїСЂРѕР±РµР»РѕРІ Рё СЃРєРѕР±РѕРє
 {
 	string temp = "";
 	for (int i = 0; i < s.length(); i++)
@@ -27,7 +27,7 @@ string deleteBracketsCompl(string s)	//удаление пробелов и скобок
 	return temp;
 }
 
-bool checkCompl(System::String^ s)		//проверка на ошибки
+bool checkCompl(System::String^ s)		//РїСЂРѕРІРµСЂРєР° РЅР° РѕС€РёР±РєРё
 {
 	std::string equation = msclr::interop::marshal_as<std::string>(s);
 	int iCounter = 0;
@@ -40,21 +40,21 @@ bool checkCompl(System::String^ s)		//проверка на ошибки
 		for (size_t j = 0; j < checkEquationCompl.length(); j++)
 			if (a == checkEquationCompl[j])
 				yes = true;
-		if (!yes)	//если нашелся запрещенный символ
+		if (!yes)	//РµСЃР»Рё РЅР°С€РµР»СЃСЏ Р·Р°РїСЂРµС‰РµРЅРЅС‹Р№ СЃРёРјРІРѕР»
 		{
-			ErrorCheckCompl = "Запрещенный символ";
+			ErrorCheckCompl = "Р—Р°РїСЂРµС‰РµРЅРЅС‹Р№ СЃРёРјРІРѕР»";
 			return false;
 		}
-		if (equation[i] == '.')		//если перед . нет числа
+		if (equation[i] == '.')		//РµСЃР»Рё РїРµСЂРµРґ . РЅРµС‚ С‡РёСЃР»Р°
 		{
 			if (i == 0) 
 			{
-				ErrorCheckCompl = "Перед . нет числа";
+				ErrorCheckCompl = "РџРµСЂРµРґ . РЅРµС‚ С‡РёСЃР»Р°";
 				return false;
 			}
 			else if (!(equation[i - 1] >= '0' && equation[i - 1] <= '9'))
 			{
-				ErrorCheckCompl = "Перед . нет числа";
+				ErrorCheckCompl = "РџРµСЂРµРґ . РЅРµС‚ С‡РёСЃР»Р°";
 				return false;
 			}
 		}
@@ -64,14 +64,14 @@ bool checkCompl(System::String^ s)		//проверка на ошибки
 			signCounter++;
 		if (i != equation.length() - 1)
 		{
-			if (equation[i] == 'i' && (equation[i + 1] != '+' && equation[i + 1] != '-'))	//если после i есть не знак
+			if (equation[i] == 'i' && (equation[i + 1] != '+' && equation[i + 1] != '-'))	//РµСЃР»Рё РїРѕСЃР»Рµ i РµСЃС‚СЊ РЅРµ Р·РЅР°Рє
 			{
-				ErrorCheckCompl = "Число после i";
+				ErrorCheckCompl = "Р§РёСЃР»Рѕ РїРѕСЃР»Рµ i";
 				return false;
 			}
 			if ((equation[i] == '-' || equation[i] == '+') && (equation[i + 1] == '-' || equation[i + 1] == '+'))	//++ -+ +- --
 			{
-				ErrorCheckCompl = "Проверьте знаки";
+				ErrorCheckCompl = "РџСЂРѕРІРµСЂСЊС‚Рµ Р·РЅР°РєРё";
 				return false;
 			}
 		}
@@ -79,18 +79,18 @@ bool checkCompl(System::String^ s)		//проверка на ошибки
 	}
 	if (iCounter > 1)
 	{
-		ErrorCheckCompl = "Проверьте кол-во мнимых чисел";
+		ErrorCheckCompl = "РџСЂРѕРІРµСЂСЊС‚Рµ РєРѕР»-РІРѕ РјРЅРёРјС‹С… С‡РёСЃРµР»";
 		return false;
 	}
 		
 	if (signCounter > 2)
 	{
-		ErrorCheckCompl = "Может быть максимум 2 числа";
+		ErrorCheckCompl = "РњРѕР¶РµС‚ Р±С‹С‚СЊ РјР°РєСЃРёРјСѓРј 2 С‡РёСЃР»Р°";
 		return false;
 	}
 	if (signCounter == 2 && iCounter < 1)
 	{
-		ErrorCheckCompl = "Нет мнимой части";
+		ErrorCheckCompl = "РќРµС‚ РјРЅРёРјРѕР№ С‡Р°СЃС‚Рё";
 		return false;
 	}
 
@@ -99,62 +99,62 @@ bool checkCompl(System::String^ s)		//проверка на ошибки
 
 void TransformCompl(System::String^ s, char box)
 {
-	std::string eq = msclr::interop::marshal_as<std::string>(s);	//коэф
-	int symb = 0;			//текущий символ в строке
+	std::string eq = msclr::interop::marshal_as<std::string>(s);	//РєРѕСЌС„
+	int symb = 0;			//С‚РµРєСѓС‰РёР№ СЃРёРјРІРѕР» РІ СЃС‚СЂРѕРєРµ
 	eq = deleteBracketsCompl(eq);	
-	string imag = "";	//мнимая часть
-	string real = "";	//действ часть
+	string imag = "";	//РјРЅРёРјР°СЏ С‡Р°СЃС‚СЊ
+	string real = "";	//РґРµР№СЃС‚РІ С‡Р°СЃС‚СЊ
 
-	string t1 = "";		//вспомогательная строка 1
-	string t2 = "";		//вспомогательная строка 2
-	int t1sign = 1;		//знак вспомогательной строки 1
-	int t2sign = 1;		//знак вспомогательной строки 2
-	int realsign = 1;	//знак действ части
-	int imagsign = 1;	//знак мнимой части
+	string t1 = "";		//РІСЃРїРѕРјРѕРіР°С‚РµР»СЊРЅР°СЏ СЃС‚СЂРѕРєР° 1
+	string t2 = "";		//РІСЃРїРѕРјРѕРіР°С‚РµР»СЊРЅР°СЏ СЃС‚СЂРѕРєР° 2
+	int t1sign = 1;		//Р·РЅР°Рє РІСЃРїРѕРјРѕРіР°С‚РµР»СЊРЅРѕР№ СЃС‚СЂРѕРєРё 1
+	int t2sign = 1;		//Р·РЅР°Рє РІСЃРїРѕРјРѕРіР°С‚РµР»СЊРЅРѕР№ СЃС‚СЂРѕРєРё 2
+	int realsign = 1;	//Р·РЅР°Рє РґРµР№СЃС‚РІ С‡Р°СЃС‚Рё
+	int imagsign = 1;	//Р·РЅР°Рє РјРЅРёРјРѕР№ С‡Р°СЃС‚Рё
 
-	bool first = true;	//первая часть числа
+	bool first = true;	//РїРµСЂРІР°СЏ С‡Р°СЃС‚СЊ С‡РёСЃР»Р°
 
-	while (symb < eq.length())	//пока не дошла до конца строки
+	while (symb < eq.length())	//РїРѕРєР° РЅРµ РґРѕС€Р»Р° РґРѕ РєРѕРЅС†Р° СЃС‚СЂРѕРєРё
 	{
-		if (first)	//пока первая часть числа
+		if (first)	//РїРѕРєР° РїРµСЂРІР°СЏ С‡Р°СЃС‚СЊ С‡РёСЃР»Р°
 		{
 			if (symb == 0 && (eq[symb] == '+' || eq[symb] == '-'))	
 			{
-				if (eq[symb] == '-') //вычленяем знак первого числа 
+				if (eq[symb] == '-') //РІС‹С‡Р»РµРЅСЏРµРј Р·РЅР°Рє РїРµСЂРІРѕРіРѕ С‡РёСЃР»Р° 
 					t1sign = -1;
 				symb++;
 			}
 			else if (eq[symb] != '+' && eq[symb] != '-')
 			{
-				t1 += eq[symb];	//заполняем строку
+				t1 += eq[symb];	//Р·Р°РїРѕР»РЅСЏРµРј СЃС‚СЂРѕРєСѓ
 				symb++;
 			}
 			else
-				first = false;	//если первое число закончилось
+				first = false;	//РµСЃР»Рё РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ Р·Р°РєРѕРЅС‡РёР»РѕСЃСЊ
 		}
-		else //если 2 часть числа
+		else //РµСЃР»Рё 2 С‡Р°СЃС‚СЊ С‡РёСЃР»Р°
 		{
 			if (eq[symb] == '+' || eq[symb] == '-')
 			{
-				if (eq[symb] == '-')	//вычленяем знак 
+				if (eq[symb] == '-')	//РІС‹С‡Р»РµРЅСЏРµРј Р·РЅР°Рє 
 					t2sign = -1;
 				symb++;
 			}
 			else 
 			{
-				t2 += eq[symb];	//заполняем строку
+				t2 += eq[symb];	//Р·Р°РїРѕР»РЅСЏРµРј СЃС‚СЂРѕРєСѓ
 				symb++;
 			}
 		}
 	}
 
-	if (t2 == "")		//если нет второй части числа
+	if (t2 == "")		//РµСЃР»Рё РЅРµС‚ РІС‚РѕСЂРѕР№ С‡Р°СЃС‚Рё С‡РёСЃР»Р°
 		if (t1[t1.size() - 1] == 'i')
 			t2 = "0";
 		else
 			t2 = "0i";
 
-	if (t1[t1.size() - 1] == 'i')	//заполнение real и imag частей
+	if (t1[t1.size() - 1] == 'i')	//Р·Р°РїРѕР»РЅРµРЅРёРµ real Рё imag С‡Р°СЃС‚РµР№
 	{
 		if (t1.size() == 1)
 			imag = "1";
@@ -171,7 +171,7 @@ void TransformCompl(System::String^ s, char box)
 		realsign = t1sign;
 	}
 
-	if (t2[t2.size() - 1] == 'i')	//заполнение real и imag частей
+	if (t2[t2.size() - 1] == 'i')	//Р·Р°РїРѕР»РЅРµРЅРёРµ real Рё imag С‡Р°СЃС‚РµР№
 	{
 		if (t2.size() == 1)
 			imag = "1";
@@ -190,11 +190,11 @@ void TransformCompl(System::String^ s, char box)
 
 	double realD;
 	double imagD;
-	realD = std::stod(real);	//полученные число приводим к double
+	realD = std::stod(real);	//РїРѕР»СѓС‡РµРЅРЅС‹Рµ С‡РёСЃР»Рѕ РїСЂРёРІРѕРґРёРј Рє double
 	imagD = std::stod(imag);
-	realD *= realsign;			//ставим знаки
+	realD *= realsign;			//СЃС‚Р°РІРёРј Р·РЅР°РєРё
 	imagD *= imagsign;
-	if (box == 'a')		//и записываем в переменные
+	if (box == 'a')		//Рё Р·Р°РїРёСЃС‹РІР°РµРј РІ РїРµСЂРµРјРµРЅРЅС‹Рµ
 	{
 		complex<double> temp (realD, imagD);
 		ACompl = temp;
@@ -211,7 +211,7 @@ void TransformCompl(System::String^ s, char box)
 	}
 }
 
-void eraserCompl(string& s)		//удаление ненужных частей числа
+void eraserCompl(string& s)		//СѓРґР°Р»РµРЅРёРµ РЅРµРЅСѓР¶РЅС‹С… С‡Р°СЃС‚РµР№ С‡РёСЃР»Р°
 {
 	bool imag = false;;
 	if (s[s.size() - 1] == 'i')
@@ -234,25 +234,25 @@ void eraserCompl(string& s)		//удаление ненужных частей числа
 
 int solverCompl(complex<double> a, complex<double> b, complex<double> c)
 {
-	if (a.imag() == 0 && a.real() == 0)	//если не квадрат. ур.
+	if (a.imag() == 0 && a.real() == 0)	//РµСЃР»Рё РЅРµ РєРІР°РґСЂР°С‚. СѓСЂ.
 	{
 		return -1;
 	}
-	if (b.imag() == 0 && c.imag() == 0 && b.real() == 0 && c.real() == 0)	//если коэф B и C = 0
+	if (b.imag() == 0 && c.imag() == 0 && b.real() == 0 && c.real() == 0)	//РµСЃР»Рё РєРѕСЌС„ B Рё C = 0
 	{
 		sx1RCompl = "0"; sx2RCompl = "0"; discrim1 = "0";
 		sx1ICompl = ""; sx2ICompl = ""; discrim2 = "";
 		return -2;
 	}
-	complex < double > four(4);	//число 4
-	complex < double > two(2);	//число 2
-	complex < double > D = (b * b) - (four * a * c);	//дискриминант
+	complex < double > four(4);	//С‡РёСЃР»Рѕ 4
+	complex < double > two(2);	//С‡РёСЃР»Рѕ 2
+	complex < double > D = (b * b) - (four * a * c);	//РґРёСЃРєСЂРёРјРёРЅР°РЅС‚
 	Discr = D;
 	complex < double > x1, x2;
-	x1 = (-b + sqrt(D)) / (two * a);	//считаем корни
+	x1 = (-b + sqrt(D)) / (two * a);	//СЃС‡РёС‚Р°РµРј РєРѕСЂРЅРё
 	x2 = (-b - sqrt(D)) / (two * a);
 
-	//приводим в правильный вид и конвертируем в string
+	//РїСЂРёРІРѕРґРёРј РІ РїСЂР°РІРёР»СЊРЅС‹Р№ РІРёРґ Рё РєРѕРЅРІРµСЂС‚РёСЂСѓРµРј РІ string
 	sx1RCompl = to_string(x1.real());
 	if (x1.imag() >= 0.0)
 		sx1ICompl = "+" + to_string(x1.imag()) + "i";
@@ -269,7 +269,7 @@ int solverCompl(complex<double> a, complex<double> b, complex<double> c)
 		discrim2 = "+" + to_string(Discr.imag()) + "i";
 	else
 		discrim2 = to_string(Discr.imag()) + "i";
-	//удаляем лишнее
+	//СѓРґР°Р»СЏРµРј Р»РёС€РЅРµРµ
 	eraserCompl(sx1RCompl);
 	eraserCompl(sx1ICompl);
 	eraserCompl(sx2RCompl);
