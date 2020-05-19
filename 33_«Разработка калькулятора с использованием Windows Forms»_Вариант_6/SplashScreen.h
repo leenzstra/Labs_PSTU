@@ -10,9 +10,6 @@ namespace Calc
 	using namespace System::Data;
 	using namespace System::Drawing;
 
-	/// <summary>
-	/// —водка дл€ MyForm
-	/// </summary>
 	public ref class SplashScreen : public System::Windows::Forms::Form
 	{
 	public:
@@ -22,9 +19,6 @@ namespace Calc
 		}
 
 	protected:
-		/// <summary>
-		/// ќсвободить все используемые ресурсы.
-		/// </summary>
 		~SplashScreen()
 		{
 			if (components)
@@ -36,24 +30,15 @@ namespace Calc
 	protected:
 	private: System::Windows::Forms::Panel^ panel2;
 	private: System::Windows::Forms::Timer^ timer1;
-
 	private: System::Windows::Forms::Panel^ panel1;
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
-
 	private: System::ComponentModel::IContainer^ components;
-
 	private:
-		/// <summary>
-		/// ќб€зательна€ переменна€ конструктора.
-		/// </summary>
 
 
 #pragma region Windows Form Designer generated code
-		/// <summary>
-		/// “ребуемый метод дл€ поддержки конструктора Ч не измен€йте 
-		/// содержимое этого метода с помощью редактора кода.
-		/// </summary>
+
 		void InitializeComponent(void)
 		{
 			this->components = (gcnew System::ComponentModel::Container());
