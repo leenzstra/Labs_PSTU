@@ -9,9 +9,6 @@ namespace Calc {
 	using namespace System::Data;
 	using namespace System::Drawing;
 
-	/// <summary>
-	/// Ñâîäêà äëÿ Error
-	/// </summary> 
 	public ref class Error : public System::Windows::Forms::Form
 	{
 	public:
@@ -36,9 +33,6 @@ namespace Calc {
 	private: System::Windows::Forms::Label^ LabelError;
 	private: System::Windows::Forms::Timer^ ErrorTimer;
 	private: System::ComponentModel::IContainer^ components;
-
-
-
 	private: System::Windows::Forms::Panel^ PanelError2;
 	private: System::Windows::Forms::Timer^ redTimer;
 	private: System::Windows::Forms::Label^ label2;
@@ -61,10 +55,7 @@ namespace Calc {
 
 
 #pragma region Windows Form Designer generated code
-		/// <summary>
-		/// Òðåáóåìûé ìåòîä äëÿ ïîääåðæêè êîíñòðóêòîðà — íå èçìåíÿéòå 
-		/// ñîäåðæèìîå ýòîãî ìåòîäà ñ ïîìîùüþ ðåäàêòîðà êîäà.
-		/// </summary>
+
 		void InitializeComponent(void)
 		{
 			this->components = (gcnew System::ComponentModel::Container());
@@ -145,7 +136,7 @@ namespace Calc {
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(108, 30);
 			this->label2->TabIndex = 43;
-			this->label2->Text = L"Îøèáêà";
+			this->label2->Text = L"Ошибка";
 			// 
 			// Error
 			// 
