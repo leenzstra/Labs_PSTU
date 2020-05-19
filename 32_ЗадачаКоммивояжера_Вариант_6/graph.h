@@ -8,10 +8,10 @@
 #define maxSize 20
 using namespace std;
 
-extern int WinW;					//ширина окна
-extern int WinH;					//высота окна				
+extern int WinW;					//С€РёСЂРёРЅР° РѕРєРЅР°
+extern int WinH;					//РІС‹СЃРѕС‚Р° РѕРєРЅР°				
 
-struct vertC						//структура координат вершин
+struct vertC						//СЃС‚СЂСѓРєС‚СѓСЂР° РєРѕРѕСЂРґРёРЅР°С‚ РІРµСЂС€РёРЅ
 {
 	int x, y;
 };
@@ -19,43 +19,43 @@ struct vertC						//структура координат вершин
 class Graph
 {
 private:
-	vector<int> vertList;					//вектор вершин
-	int adjMatrix[maxSize][maxSize];		//матрица смежности
+	vector<int> vertList;					//РІРµРєС‚РѕСЂ РІРµСЂС€РёРЅ
+	int adjMatrix[maxSize][maxSize];		//РјР°С‚СЂРёС†Р° СЃРјРµР¶РЅРѕСЃС‚Рё
 	 
 public:
-	Graph();			//конструктор
-	~Graph();			//деструктор
+	Graph();			//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
+	~Graph();			//РґРµСЃС‚СЂСѓРєС‚РѕСЂ
 
-	bool IsEmpty();		//проверка на пустоту графа
-	bool IsFull();		//проверка на полноту графа
+	bool IsEmpty();		//РїСЂРѕРІРµСЂРєР° РЅР° РїСѓСЃС‚РѕС‚Сѓ РіСЂР°С„Р°
+	bool IsFull();		//РїСЂРѕРІРµСЂРєР° РЅР° РїРѕР»РЅРѕС‚Сѓ РіСЂР°С„Р°
 
-	int GetAdjMatrixElem(int i, int j) { return adjMatrix[i][j]; }				//получение элемента матрицы смежности
-	int GetVertListSize() { return vertList.size(); }							//получение кол-ва вершин графа
-	int GetVertPos(const int& vertex);											//получить позицию вершины
-	int GetAmountEdges();														//получить кол-во ребер
+	int GetAdjMatrixElem(int i, int j) { return adjMatrix[i][j]; }				//РїРѕР»СѓС‡РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РјР°С‚СЂРёС†С‹ СЃРјРµР¶РЅРѕСЃС‚Рё
+	int GetVertListSize() { return vertList.size(); }							//РїРѕР»СѓС‡РµРЅРёРµ РєРѕР»-РІР° РІРµСЂС€РёРЅ РіСЂР°С„Р°
+	int GetVertPos(const int& vertex);											//РїРѕР»СѓС‡РёС‚СЊ РїРѕР·РёС†РёСЋ РІРµСЂС€РёРЅС‹
+	int GetAmountEdges();														//РїРѕР»СѓС‡РёС‚СЊ РєРѕР»-РІРѕ СЂРµР±РµСЂ
 
-	void SetEdgeZero(int i, int j) { adjMatrix[i][j] = 0; adjMatrix[j][i] = 0; } //зануление элемента матрицы смежности
-	void InsertVertex(const int& vertex);										//добавить вершину
-	void InsertEdge(const int& vertex1, const int& vertex2, int weigth);		//добавить ребро
+	void SetEdgeZero(int i, int j) { adjMatrix[i][j] = 0; adjMatrix[j][i] = 0; } //Р·Р°РЅСѓР»РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РјР°С‚СЂРёС†С‹ СЃРјРµР¶РЅРѕСЃС‚Рё
+	void InsertVertex(const int& vertex);										//РґРѕР±Р°РІРёС‚СЊ РІРµСЂС€РёРЅСѓ
+	void InsertEdge(const int& vertex1, const int& vertex2, int weigth);		//РґРѕР±Р°РІРёС‚СЊ СЂРµР±СЂРѕ
 
-	void Print();																//печать матрицы смежности
+	void Print();																//РїРµС‡Р°С‚СЊ РјР°С‚СЂРёС†С‹ СЃРјРµР¶РЅРѕСЃС‚Рё
 
-	void eraseLastVert();														//удалить последнюю вершину
-	void eraseEdge(const int& vertex1, const int& vertex2);						//удалить выбранное ребро
+	void eraseLastVert();														//СѓРґР°Р»РёС‚СЊ РїРѕСЃР»РµРґРЅСЋСЋ РІРµСЂС€РёРЅСѓ
+	void eraseEdge(const int& vertex1, const int& vertex2);						//СѓРґР°Р»РёС‚СЊ РІС‹Р±СЂР°РЅРЅРѕРµ СЂРµР±СЂРѕ
 };
 
-extern Graph graph;		//граф
+extern Graph graph;		//РіСЂР°С„
 
-//решение задачи коммивояжера
-int** makeTSPMatrix();					//создаем матрицу и меняем 0 на -1
-int* findMin(int* line, int n);			//поиск минимума в строке
-void printMatrix(int** matrix);			//печать текущей матрицы
-int** reductionLines(int** oldmatrix);	//редукция строк и столбцов
-int** rebuildMatrix(int** oldmatrix);	//перестроение матрицы, нахождение отрезка пути
-void printResult();						//печать найденного пути
+//СЂРµС€РµРЅРёРµ Р·Р°РґР°С‡Рё РєРѕРјРјРёРІРѕСЏР¶РµСЂР°
+int** makeTSPMatrix();					//СЃРѕР·РґР°РµРј РјР°С‚СЂРёС†Сѓ Рё РјРµРЅСЏРµРј 0 РЅР° -1
+int* findMin(int* line, int n);			//РїРѕРёСЃРє РјРёРЅРёРјСѓРјР° РІ СЃС‚СЂРѕРєРµ
+void printMatrix(int** matrix);			//РїРµС‡Р°С‚СЊ С‚РµРєСѓС‰РµР№ РјР°С‚СЂРёС†С‹
+int** reductionLines(int** oldmatrix);	//СЂРµРґСѓРєС†РёСЏ СЃС‚СЂРѕРє Рё СЃС‚РѕР»Р±С†РѕРІ
+int** rebuildMatrix(int** oldmatrix);	//РїРµСЂРµСЃС‚СЂРѕРµРЅРёРµ РјР°С‚СЂРёС†С‹, РЅР°С…РѕР¶РґРµРЅРёРµ РѕС‚СЂРµР·РєР° РїСѓС‚Рё
+void printResult();						//РїРµС‡Р°С‚СЊ РЅР°Р№РґРµРЅРЅРѕРіРѕ РїСѓС‚Рё
 
-//отрисовка
-void drawBut1();			//отрисвка кнопок
+//РѕС‚СЂРёСЃРѕРІРєР°
+void drawBut1();			//РѕС‚СЂРёСЃРІРєР° РєРЅРѕРїРѕРє
 void drawBut2();
 void drawButSteps();
 void drawBut3();
@@ -63,30 +63,30 @@ void drawButPath();
 void drawBut4();
 void drawBut5();
 void drawBut6();
-void drawSomeInfo();		//отрисовка информации о графе
+void drawSomeInfo();		//РѕС‚СЂРёСЃРѕРІРєР° РёРЅС„РѕСЂРјР°С†РёРё Рѕ РіСЂР°С„Рµ
 
-void drawCircle(int x, int y, int R);						//нарисовать круг
-void drawBorderedCircle(int x, int y, int R);				//нарисовать выделенный круг
-void drawText(int nom, int x1, int y1);						//нарисовать текст
-void drawLine(int text, int x0, int y0, int x1, int y1);	//нарисовать соединяющую линию
-void drawVertex(int n);										//нарисовать вершину и текст (круг и текст)
-void drawPathVertex(int n);									//визуализация пути коммивояжера
-void drawGraph();											//нарисовать весь граф полностью
-void setGraph();											//создание графа
+void drawCircle(int x, int y, int R);						//РЅР°СЂРёСЃРѕРІР°С‚СЊ РєСЂСѓРі
+void drawBorderedCircle(int x, int y, int R);				//РЅР°СЂРёСЃРѕРІР°С‚СЊ РІС‹РґРµР»РµРЅРЅС‹Р№ РєСЂСѓРі
+void drawText(int nom, int x1, int y1);						//РЅР°СЂРёСЃРѕРІР°С‚СЊ С‚РµРєСЃС‚
+void drawLine(int text, int x0, int y0, int x1, int y1);	//РЅР°СЂРёСЃРѕРІР°С‚СЊ СЃРѕРµРґРёРЅСЏСЋС‰СѓСЋ Р»РёРЅРёСЋ
+void drawVertex(int n);										//РЅР°СЂРёСЃРѕРІР°С‚СЊ РІРµСЂС€РёРЅСѓ Рё С‚РµРєСЃС‚ (РєСЂСѓРі Рё С‚РµРєСЃС‚)
+void drawPathVertex(int n);									//РІРёР·СѓР°Р»РёР·Р°С†РёСЏ РїСѓС‚Рё РєРѕРјРјРёРІРѕСЏР¶РµСЂР°
+void drawGraph();											//РЅР°СЂРёСЃРѕРІР°С‚СЊ РІРµСЃСЊ РіСЂР°С„ РїРѕР»РЅРѕСЃС‚СЊСЋ
+void setGraph();											//СЃРѕР·РґР°РЅРёРµ РіСЂР°С„Р°
 
 void setCoords(int i, int n);
 
-bool checkSalesman(int** matrix);							//проверка на возможность задачи коммивояжера
-int checkCircle(int x, int y);								//проверка на вхождение курсора в круг
-void checkButton(int x, int y);								//проверка на вхождение курсора в кнопку
+bool checkSalesman(int** matrix);							//РїСЂРѕРІРµСЂРєР° РЅР° РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ Р·Р°РґР°С‡Рё РєРѕРјРјРёРІРѕСЏР¶РµСЂР°
+int checkCircle(int x, int y);								//РїСЂРѕРІРµСЂРєР° РЅР° РІС…РѕР¶РґРµРЅРёРµ РєСѓСЂСЃРѕСЂР° РІ РєСЂСѓРі
+void checkButton(int x, int y);								//РїСЂРѕРІРµСЂРєР° РЅР° РІС…РѕР¶РґРµРЅРёРµ РєСѓСЂСЃРѕСЂР° РІ РєРЅРѕРїРєСѓ
 
-void drawLineCut(int x, int y);								//отрисовка отрезающей линии
-bool cross(int x11, int x12, int y11, int y12, int x21, int x22, int y21, int y22);	//нахождение точки пересечения отрез. линии и ребра (ребер)
-void deleteEdgeByCut();										//удаление выбранного (или выбранных) ребра (ребер)
+void drawLineCut(int x, int y);								//РѕС‚СЂРёСЃРѕРІРєР° РѕС‚СЂРµР·Р°СЋС‰РµР№ Р»РёРЅРёРё
+bool cross(int x11, int x12, int y11, int y12, int x21, int x22, int y21, int y22);	//РЅР°С…РѕР¶РґРµРЅРёРµ С‚РѕС‡РєРё РїРµСЂРµСЃРµС‡РµРЅРёСЏ РѕС‚СЂРµР·. Р»РёРЅРёРё Рё СЂРµР±СЂР° (СЂРµР±РµСЂ)
+void deleteEdgeByCut();										//СѓРґР°Р»РµРЅРёРµ РІС‹Р±СЂР°РЅРЅРѕРіРѕ (РёР»Рё РІС‹Р±СЂР°РЅРЅС‹С…) СЂРµР±СЂР° (СЂРµР±РµСЂ)
 
-void mouseMove(int x, int y);								//отслеживание движения мыши
-void mouseClick(int button, int state, int x, int y);		//отслеживание нажатий мыши
-void reshape(int w, int h);									//решейп
-void display();												//отрисовка содержимого окна
+void mouseMove(int x, int y);								//РѕС‚СЃР»РµР¶РёРІР°РЅРёРµ РґРІРёР¶РµРЅРёСЏ РјС‹С€Рё
+void mouseClick(int button, int state, int x, int y);		//РѕС‚СЃР»РµР¶РёРІР°РЅРёРµ РЅР°Р¶Р°С‚РёР№ РјС‹С€Рё
+void reshape(int w, int h);									//СЂРµС€РµР№Рї
+void display();												//РѕС‚СЂРёСЃРѕРІРєР° СЃРѕРґРµСЂР¶РёРјРѕРіРѕ РѕРєРЅР°
 
 
