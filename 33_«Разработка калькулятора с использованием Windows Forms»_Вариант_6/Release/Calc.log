@@ -1,8 +1,1 @@
-﻿  CalcForm.cpp
-C:\Users\leenz\Desktop\VSproj\33_«Разработка калькулятора с использованием Windows Forms»_Вариант_6\complexCoeff.h(24,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\leenz\Desktop\VSproj\33_«Разработка калькулятора с использованием Windows Forms»_Вариант_6\complexCoeff.h(117,14): warning C4018: <: несоответствие типов со знаком и без знака
-  Error.cpp
-  SplashScreen.cpp
-  Создание кода...
-  CalcForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
-  Calc.vcxproj -> C:\Users\leenz\Desktop\VSproj\33_«Разработка калькулятора с использованием Windows Forms»_Вариант_6\Release\Calc.exe
+﻿  Calc.vcxproj -> C:\Users\leenz\Desktop\VSproj\33_«Разработка калькулятора с использованием Windows Forms»_Вариант_6\Release\Calc.exe
