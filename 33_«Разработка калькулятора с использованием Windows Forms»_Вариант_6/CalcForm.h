@@ -234,7 +234,7 @@ namespace Calc {
 			this->HeaderLabel4->Name = L"HeaderLabel4";
 			this->HeaderLabel4->Size = System::Drawing::Size(92, 26);
 			this->HeaderLabel4->TabIndex = 44;
-			this->HeaderLabel4->Text = L"Закрыть";
+			this->HeaderLabel4->Text = L"Р—Р°РєСЂС‹С‚СЊ";
 			this->HeaderLabel4->TextAlign = System::Drawing::ContentAlignment::TopCenter;
 			// 
 			// HeaderLabel3
@@ -245,7 +245,7 @@ namespace Calc {
 			this->HeaderLabel3->Name = L"HeaderLabel3";
 			this->HeaderLabel3->Size = System::Drawing::Size(83, 21);
 			this->HeaderLabel3->TabIndex = 43;
-			this->HeaderLabel3->Text = L"Скрыть";
+			this->HeaderLabel3->Text = L"РЎРєСЂС‹С‚СЊ";
 			this->HeaderLabel3->TextAlign = System::Drawing::ContentAlignment::TopCenter;
 			// 
 			// HeaderLabel2
@@ -257,7 +257,7 @@ namespace Calc {
 			this->HeaderLabel2->Name = L"HeaderLabel2";
 			this->HeaderLabel2->Size = System::Drawing::Size(93, 21);
 			this->HeaderLabel2->TabIndex = 42;
-			this->HeaderLabel2->Text = L"Помощь";
+			this->HeaderLabel2->Text = L"РџРѕРјРѕС‰СЊ";
 			this->HeaderLabel2->TextAlign = System::Drawing::ContentAlignment::TopCenter;
 			// 
 			// HeaderLabel1
@@ -269,7 +269,7 @@ namespace Calc {
 			this->HeaderLabel1->Name = L"HeaderLabel1";
 			this->HeaderLabel1->Size = System::Drawing::Size(72, 26);
 			this->HeaderLabel1->TabIndex = 41;
-			this->HeaderLabel1->Text = L"Тема";
+			this->HeaderLabel1->Text = L"РўРµРјР°";
 			this->HeaderLabel1->TextAlign = System::Drawing::ContentAlignment::TopCenter;
 			// 
 			// butClose
@@ -471,9 +471,9 @@ namespace Calc {
 			this->HelpLabel->Name = L"HelpLabel";
 			this->HelpLabel->Size = System::Drawing::Size(538, 39);
 			this->HelpLabel->TabIndex = 17;
-			this->HelpLabel->Text = L"                                     Действительные                          Комп"
-				L"лексные\r\n                                      коэффициенты                     "
-				L"     коэффициенты";
+			this->HelpLabel->Text = L"                                     Р”РµР№СЃС‚РІРёС‚РµР»СЊРЅС‹Рµ                          РљРѕРјРї"
+				L"Р»РµРєСЃРЅС‹Рµ\r\n                                      РєРѕСЌС„С„РёС†РёРµРЅС‚С‹                     "
+				L"     РєРѕСЌС„С„РёС†РёРµРЅС‚С‹";
 			// 
 			// greenPanel
 			// 
@@ -561,7 +561,7 @@ namespace Calc {
 			this->colorsLabel->Name = L"colorsLabel";
 			this->colorsLabel->Size = System::Drawing::Size(112, 133);
 			this->colorsLabel->TabIndex = 31;
-			this->colorsLabel->Text = L"Ошибка\r\n\r\nПусто\r\n\r\nНет ошибок";
+			this->colorsLabel->Text = L"РћС€РёР±РєР°\r\n\r\nРџСѓСЃС‚Рѕ\r\n\r\nРќРµС‚ РѕС€РёР±РѕРє";
 			// 
 			// HelpLabel2
 			// 
@@ -586,7 +586,7 @@ namespace Calc {
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(111, 30);
 			this->label3->TabIndex = 46;
-			this->label3->Text = L"Помощь";
+			this->label3->Text = L"РџРѕРјРѕС‰СЊ";
 			// 
 			// clearPanel
 			// 
@@ -862,7 +862,7 @@ namespace Calc {
 			this->complexSwitcher2->Name = L"complexSwitcher2";
 			this->complexSwitcher2->Size = System::Drawing::Size(133, 40);
 			this->complexSwitcher2->TabIndex = 53;
-			this->complexSwitcher2->Text = L"Комплексные \r\nкоэф\r\n";
+			this->complexSwitcher2->Text = L"РљРѕРјРїР»РµРєСЃРЅС‹Рµ \r\nРєРѕСЌС„\r\n";
 			this->complexSwitcher2->UseVisualStyleBackColor = false;
 			// 
 			// complexSwitcher1
@@ -883,7 +883,7 @@ namespace Calc {
 			this->complexSwitcher1->Size = System::Drawing::Size(155, 40);
 			this->complexSwitcher1->TabIndex = 52;
 			this->complexSwitcher1->TabStop = true;
-			this->complexSwitcher1->Text = L"Действительные \r\nкоэф\r\n";
+			this->complexSwitcher1->Text = L"Р”РµР№СЃС‚РІРёС‚РµР»СЊРЅС‹Рµ \r\nРєРѕСЌС„\r\n";
 			this->complexSwitcher1->TextAlign = System::Drawing::ContentAlignment::TopLeft;
 			this->complexSwitcher1->UseVisualStyleBackColor = false;
 			this->complexSwitcher1->CheckedChanged += gcnew System::EventHandler(this, &CalcForm::complexSwitcher1_CheckedChanged);
@@ -947,7 +947,7 @@ namespace Calc {
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(285, 30);
 			this->label2->TabIndex = 42;
-			this->label2->Text = L"Квадратное уравнение";
+			this->label2->Text = L"РљРІР°РґСЂР°С‚РЅРѕРµ СѓСЂР°РІРЅРµРЅРёРµ";
 			// 
 			// splitter1
 			// 
@@ -968,7 +968,7 @@ namespace Calc {
 			this->histLabel->Name = L"histLabel";
 			this->histLabel->Size = System::Drawing::Size(328, 53);
 			this->histLabel->TabIndex = 46;
-			this->histLabel->Text = L"  История";
+			this->histLabel->Text = L"  РСЃС‚РѕСЂРёСЏ";
 			this->histLabel->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
 			// ActiveModePanel
@@ -988,7 +988,7 @@ namespace Calc {
 			this->SolvedLabel->Name = L"SolvedLabel";
 			this->SolvedLabel->Size = System::Drawing::Size(95, 22);
 			this->SolvedLabel->TabIndex = 47;
-			this->SolvedLabel->Text = L"Решено: ";
+			this->SolvedLabel->Text = L"Р РµС€РµРЅРѕ: ";
 			// 
 			// SolvedNumLabel
 			// 
@@ -1066,7 +1066,7 @@ namespace Calc {
 #pragma endregion
 
 	private:
-		//цветы тема и окрашиваний
+		//С†РІРµС‚С‹ С‚РµРјР° Рё РѕРєСЂР°С€РёРІР°РЅРёР№
 		Color SecondaryDark = Color::FromArgb(53, 60, 71);	
 		Color PrimaryDark = Color::FromArgb(62, 69, 83);	
 		Color SecondaryLight = Color::FromArgb(255, 255, 255);	
@@ -1077,26 +1077,26 @@ namespace Calc {
 		Color LightPurple = Color::FromArgb(133, 64, 245);
 		Color LightGreen = Color::SpringGreen;
 
-		bool mouseDown;		//если нажата кнопка мыши
+		bool mouseDown;		//РµСЃР»Рё РЅР°Р¶Р°С‚Р° РєРЅРѕРїРєР° РјС‹С€Рё
 		Point lastLocation;	
 
-		bool nightmode = false;	//смена темы
-		char nightsettings;		//запись темы в файл
+		bool nightmode = false;	//СЃРјРµРЅР° С‚РµРјС‹
+		char nightsettings;		//Р·Р°РїРёСЃСЊ С‚РµРјС‹ РІ С„Р°Р№Р»
 
-		int historyCount = 0;	//кол-во записей в истории
+		int historyCount = 0;	//РєРѕР»-РІРѕ Р·Р°РїРёСЃРµР№ РІ РёСЃС‚РѕСЂРёРё
 
-		bool busyNow = false;	//занятость программы
+		bool busyNow = false;	//Р·Р°РЅСЏС‚РѕСЃС‚СЊ РїСЂРѕРіСЂР°РјРјС‹
 
-		bool isOpen = false;	//состояние элементов окна
+		bool isOpen = false;	//СЃРѕСЃС‚РѕСЏРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РѕРєРЅР°
 		bool isCleared = false;
 		bool isProgress = false;
 		bool headerIsOpen = true;
 		
-		Pen^ pA; Pen^ pC; Pen^ pB;	//цветы окрашивания текстбоксов
+		Pen^ pA; Pen^ pC; Pen^ pB;	//С†РІРµС‚С‹ РѕРєСЂР°С€РёРІР°РЅРёСЏ С‚РµРєСЃС‚Р±РѕРєСЃРѕРІ
 
-		bool complex = false;	//режим калькулятора
+		bool complex = false;	//СЂРµР¶РёРј РєР°Р»СЊРєСѓР»СЏС‚РѕСЂР°
 
-		//функция смены темы
+		//С„СѓРЅРєС†РёСЏ СЃРјРµРЅС‹ С‚РµРјС‹
 	void nightTheme()
 		{
 			CalcForm::ForeColor = Color::White;
@@ -1176,7 +1176,7 @@ namespace Calc {
 				complexSwitcher2->ForeColor = Color::Black;
 
 		}
-		//замена картинки из ресурсов
+		//Р·Р°РјРµРЅР° РєР°СЂС‚РёРЅРєРё РёР· СЂРµСЃСѓСЂСЃРѕРІ
 	private: Void setImageFromResPic(System::String^ resource_ID, PictureBox^ pic) 
 	{
 		Reflection::Assembly^ pxAssembly = Reflection::Assembly::GetExecutingAssembly();
@@ -1185,16 +1185,16 @@ namespace Calc {
 
 		pic->BackgroundImage = (cli::safe_cast<Drawing::Bitmap^>(s_pxResourceManager->GetObject(resource_ID)));
 	}
-		//Загрузка
+		//Р—Р°РіСЂСѓР·РєР°
 	private: System::Void CalcForm_Load(System::Object^ sender, System::EventArgs^ e)
 	{
-		//скрыть основное окно
+		//СЃРєСЂС‹С‚СЊ РѕСЃРЅРѕРІРЅРѕРµ РѕРєРЅРѕ
 		this->Hide();
-		//экран загрузки
+		//СЌРєСЂР°РЅ Р·Р°РіСЂСѓР·РєРё
 		Calc::SplashScreen LoadScreen;
 		LoadScreen.ShowDialog();
 
-		//чтение из файла на рабочем столе
+		//С‡С‚РµРЅРёРµ РёР· С„Р°Р№Р»Р° РЅР° СЂР°Р±РѕС‡РµРј СЃС‚РѕР»Рµ
 		wchar_t szBuf[MAX_PATH]{ 0 };
 		GetEnvironmentVariableW(L"USERPROFILE", szBuf, MAX_PATH);
 		wcscat_s(szBuf, L"\\Desktop\\settings.txt");
@@ -1203,26 +1203,26 @@ namespace Calc {
 		{
 			string temp; 
 			fin >> temp; 
-			nightsettings = temp[0];	//тема
-			fin >> solvedNum;		//кол-во решенных ур.
+			nightsettings = temp[0];	//С‚РµРјР°
+			fin >> solvedNum;		//РєРѕР»-РІРѕ СЂРµС€РµРЅРЅС‹С… СѓСЂ.
 		}
-		else //если не удалось считать
-		{	//ставим по ум.
+		else //РµСЃР»Рё РЅРµ СѓРґР°Р»РѕСЃСЊ СЃС‡РёС‚Р°С‚СЊ
+		{	//СЃС‚Р°РІРёРј РїРѕ СѓРј.
 			nightsettings = 'n';
 			solvedNum = "0";
 		}
-		solvedNumber = stol(solvedNum);	//число решений в long
+		solvedNumber = stol(solvedNum);	//С‡РёСЃР»Рѕ СЂРµС€РµРЅРёР№ РІ long
 		fin.close();
 
-		//вывод числа решений на окно
+		//РІС‹РІРѕРґ С‡РёСЃР»Р° СЂРµС€РµРЅРёР№ РЅР° РѕРєРЅРѕ
 		SolvedNumLabel->Text = msclr::interop::marshal_as<System::String^>(solvedNum);
 
-		//устанавливаем цвета для границ ТекстБоксом по ум.
+		//СѓСЃС‚Р°РЅР°РІР»РёРІР°РµРј С†РІРµС‚Р° РґР»СЏ РіСЂР°РЅРёС† РўРµРєСЃС‚Р‘РѕРєСЃРѕРј РїРѕ СѓРј.
 		pA = gcnew Pen(LightPurple, 2.0f);
 		pB = gcnew Pen(LightPurple, 2.0f);
 		pC = gcnew Pen(LightPurple, 2.0f);
 
-		//установки некоторых параметров объектов
+		//СѓСЃС‚Р°РЅРѕРІРєРё РЅРµРєРѕС‚РѕСЂС‹С… РїР°СЂР°РјРµС‚СЂРѕРІ РѕР±СЉРµРєС‚РѕРІ
 		clearPanel->Width = 330;
 		ClearPanelDynamic->Height = 0;
 		HeaderPanel->Width = 60;
@@ -1238,7 +1238,7 @@ namespace Calc {
 		HeaderDynamicPanel->BackColor = ThemeColor;
 		ActiveModePanel->BackColor = ThemeColor;
 
-		//установка считанной темы
+		//СѓСЃС‚Р°РЅРѕРІРєР° СЃС‡РёС‚Р°РЅРЅРѕР№ С‚РµРјС‹
 		if (nightsettings == 'y') 
 		{
 			nightmode = true;
@@ -1250,15 +1250,15 @@ namespace Calc {
 			dayTheme();
 		}
 
-		//выбор цвета переключателя режимов
+		//РІС‹Р±РѕСЂ С†РІРµС‚Р° РїРµСЂРµРєР»СЋС‡Р°С‚РµР»СЏ СЂРµР¶РёРјРѕРІ
 		if (nightmode)
 			complexSwitcher2->ForeColor = Color::WhiteSmoke;
 		else
 			complexSwitcher2->ForeColor = Color::Black;
 
-		this->Show();	//показать основное окно
+		this->Show();	//РїРѕРєР°Р·Р°С‚СЊ РѕСЃРЅРѕРІРЅРѕРµ РѕРєРЅРѕ
 	}
-		//Передвижение окна
+		//РџРµСЂРµРґРІРёР¶РµРЅРёРµ РѕРєРЅР°
 	private: System::Void HeaderUp_MouseDown(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e) {
 
 		mouseDown = true;
@@ -1269,7 +1269,7 @@ namespace Calc {
 
 		if (mouseDown)
 		{
-			//установка нового положения окна в зависимости от старого
+			//СѓСЃС‚Р°РЅРѕРІРєР° РЅРѕРІРѕРіРѕ РїРѕР»РѕР¶РµРЅРёСЏ РѕРєРЅР° РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ СЃС‚Р°СЂРѕРіРѕ
 			this->Location = Point((this->Location.X - lastLocation.X) + e->X, (this->Location.Y - lastLocation.Y) + e->Y);
 			this->Update();
 		}
@@ -1279,26 +1279,26 @@ namespace Calc {
 	{
 		mouseDown = false;
 	}
-		   //Закрытие и сворачивание окна
+		   //Р—Р°РєСЂС‹С‚РёРµ Рё СЃРІРѕСЂР°С‡РёРІР°РЅРёРµ РѕРєРЅР°
 	private: System::Void buttonCloseWindow_Click(System::Object^ sender, System::EventArgs^ e)
 	{
-		//получаем путь в файлу на рабочем столе польз.
+		//РїРѕР»СѓС‡Р°РµРј РїСѓС‚СЊ РІ С„Р°Р№Р»Сѓ РЅР° СЂР°Р±РѕС‡РµРј СЃС‚РѕР»Рµ РїРѕР»СЊР·.
 		wchar_t szBuf[MAX_PATH]{ 0 };
 		GetEnvironmentVariableW(L"USERPROFILE", szBuf, MAX_PATH);
 		wcscat_s(szBuf, L"\\Desktop\\settings.txt");
 
-		ofstream g(szBuf);	//запись
+		ofstream g(szBuf);	//Р·Р°РїРёСЃСЊ
 		if (g.is_open())
 		{
-			if (nightmode)	//записываем тему
+			if (nightmode)	//Р·Р°РїРёСЃС‹РІР°РµРј С‚РµРјСѓ
 				g << "y\n";
 			else
 				g << "n\n";
-			solvedNum = to_string(solvedNumber);	//кол-во решений
+			solvedNum = to_string(solvedNumber);	//РєРѕР»-РІРѕ СЂРµС€РµРЅРёР№
 			g << solvedNum;
 		}
 		g.close();
-		//анимция закрытия
+		//Р°РЅРёРјС†РёСЏ Р·Р°РєСЂС‹С‚РёСЏ
 		timer2->Interval = 5;
 		timer2->Start();
 	}
@@ -1313,7 +1313,7 @@ namespace Calc {
 	}
 	private: System::Void buttonMinimizeWindow_Click(System::Object^ sender, System::EventArgs^ e)
 	{
-		//анимация скрытия
+		//Р°РЅРёРјР°С†РёСЏ СЃРєСЂС‹С‚РёСЏ
 		timer1->Interval = 5;
 		timer1->Start();
 	}
@@ -1327,7 +1327,7 @@ namespace Calc {
 			this->Opacity = 1.0;
 		}
 	}
-		   //Смена темы
+		   //РЎРјРµРЅР° С‚РµРјС‹
 	private: System::Void timerThemeChange_Tick(System::Object^ sender, System::EventArgs^ e)
 	{
 		if (nightmode == false)
@@ -1336,11 +1336,11 @@ namespace Calc {
 			if (this->Opacity == 0)
 			{
 				timer3->Stop();
-				nightmode = true;	//применяем тему
+				nightmode = true;	//РїСЂРёРјРµРЅСЏРµРј С‚РµРјСѓ
 				nightTheme();
-				timer4->Interval = 2;	//возвращение окна
+				timer4->Interval = 2;	//РІРѕР·РІСЂР°С‰РµРЅРёРµ РѕРєРЅР°
 				timer4->Start();
-				clearPanel->Width = 0; //анимация
+				clearPanel->Width = 0; //Р°РЅРёРјР°С†РёСЏ
 				ClearTimer->Start();
 			}
 		}
@@ -1372,7 +1372,7 @@ namespace Calc {
 	{
 		if (!busyNow)
 		{
-			busyNow = true;	//ничего нельзя делать
+			busyNow = true;	//РЅРёС‡РµРіРѕ РЅРµР»СЊР·СЏ РґРµР»Р°С‚СЊ
 			timer3->Interval = 2;
 			timer3->Start();
 		}
@@ -1386,7 +1386,7 @@ namespace Calc {
 			timer3->Start();
 		}
 	}
-		   //Очищение истории
+		   //РћС‡РёС‰РµРЅРёРµ РёСЃС‚РѕСЂРёРё
 	private: System::Void buttonHistoryClear_Click(System::Object^ sender, System::EventArgs^ e)
 	{
 		DynamicClearTimer->Start();
@@ -1398,10 +1398,10 @@ namespace Calc {
 		ClearPanelDynamic->Height += 105;
 		if (ClearPanelDynamic->Height == 525)
 		{
-			historyBox->Clear();	//очищаем бокс
-			historyCount = 0;		//кол-во записей = 0
-			historyNotes.clear();	//очищаем вектор записей
-			isCleared = true;		//очищено - да
+			historyBox->Clear();	//РѕС‡РёС‰Р°РµРј Р±РѕРєСЃ
+			historyCount = 0;		//РєРѕР»-РІРѕ Р·Р°РїРёСЃРµР№ = 0
+			historyNotes.clear();	//РѕС‡РёС‰Р°РµРј РІРµРєС‚РѕСЂ Р·Р°РїРёСЃРµР№
+			isCleared = true;		//РѕС‡РёС‰РµРЅРѕ - РґР°
 			ClearPanelDynamic->Dock = System::Windows::Forms::DockStyle::Top;
 		}
 	}
@@ -1419,19 +1419,19 @@ namespace Calc {
 }
 	private: System::Void timerHistoryBeauty_Tick(System::Object^ sender, System::EventArgs^ e)
 	{
-		//анимация при смене темы
+		//Р°РЅРёРјР°С†РёСЏ РїСЂРё СЃРјРµРЅРµ С‚РµРјС‹
 		clearPanel->Width += 15;
 		if (clearPanel->Width == 330)
 			ClearTimer->Stop();
 	}
-		   //Панель помощи
+		   //РџР°РЅРµР»СЊ РїРѕРјРѕС‰Рё
 	private: System::Void buttonHelp_Click(System::Object^ sender, System::EventArgs^ e)
 		{
 			HelpTimer->Start();
 		}
 	private: System::Void timerHelpOpener_Tick(System::Object^ sender, System::EventArgs^ e)
 	{	
-		//открывает/закрывает панель помощи
+		//РѕС‚РєСЂС‹РІР°РµС‚/Р·Р°РєСЂС‹РІР°РµС‚ РїР°РЅРµР»СЊ РїРѕРјРѕС‰Рё
 		if (!isOpen)
 		{
 			openerPanel->Width -= 40;
@@ -1453,19 +1453,19 @@ namespace Calc {
 			}
 		}
 	}
-		   //очищение ввода
+		   //РѕС‡РёС‰РµРЅРёРµ РІРІРѕРґР°
 	private: System::Void clearInputButton_Click(System::Object^ sender, System::EventArgs^ e)
 		{
 			BoxA->Clear(); BoxB->Clear(); BoxC->Clear(); BoxX1->Clear(); BoxX2->Clear(); boxDiscr->Clear();
 		}
-		   //Окрашивание текст боксов
+		   //РћРєСЂР°С€РёРІР°РЅРёРµ С‚РµРєСЃС‚ Р±РѕРєСЃРѕРІ
 	private: System::Void Box_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e)
 	{
-		//рисование границ текст боксов по их координатам
+		//СЂРёСЃРѕРІР°РЅРёРµ РіСЂР°РЅРёС† С‚РµРєСЃС‚ Р±РѕРєСЃРѕРІ РїРѕ РёС… РєРѕРѕСЂРґРёРЅР°С‚Р°Рј
 		e->Graphics->DrawRectangle(pA, BoxA->Location.X - 1, BoxA->Location.Y - 1, BoxA->Width + 2, BoxA->Height + 2);
 		e->Graphics->DrawRectangle(pB, BoxB->Location.X - 1, BoxB->Location.Y - 1, BoxB->Width + 2, BoxB->Height + 2);
 		e->Graphics->DrawRectangle(pC, BoxC->Location.X - 1, BoxC->Location.Y - 1, BoxC->Width + 2, BoxC->Height + 2);
-		//если все цвета - зеленые, то все верно
+		//РµСЃР»Рё РІСЃРµ С†РІРµС‚Р° - Р·РµР»РµРЅС‹Рµ, С‚Рѕ РІСЃРµ РІРµСЂРЅРѕ
 		if (pA->Color == LightGreen && pB->Color == LightGreen && pC->Color == LightGreen)
 			checkPic->Visible = true;
 		else
@@ -1473,24 +1473,24 @@ namespace Calc {
 	}
 	private: System::Void BoxA_TextChanged(System::Object^ sender, System::EventArgs^ e)
 	{
-		if (BoxA->Text == "")	//если текст бокс пустой
+		if (BoxA->Text == "")	//РµСЃР»Рё С‚РµРєСЃС‚ Р±РѕРєСЃ РїСѓСЃС‚РѕР№
 			pA = gcnew Pen(LightPurple, 2.0f);
 
-		else if (!complex)	//если режим действ. чисел
+		else if (!complex)	//РµСЃР»Рё СЂРµР¶РёРј РґРµР№СЃС‚РІ. С‡РёСЃРµР»
 		{
-			if(!check(BoxA->Text))	//проверяем на верность
+			if(!check(BoxA->Text))	//РїСЂРѕРІРµСЂСЏРµРј РЅР° РІРµСЂРЅРѕСЃС‚СЊ
 				pA = gcnew Pen(LightRed, 2.0f);
-			else //иначе
+			else //РёРЅР°С‡Рµ
 				pA = gcnew Pen(LightGreen, 2.0f);
 		}
-		else //если комплексный режим
+		else //РµСЃР»Рё РєРѕРјРїР»РµРєСЃРЅС‹Р№ СЂРµР¶РёРј
 		{
-			if (!checkCompl(BoxA->Text)) //проверяем на верность
+			if (!checkCompl(BoxA->Text)) //РїСЂРѕРІРµСЂСЏРµРј РЅР° РІРµСЂРЅРѕСЃС‚СЊ
 				pA = gcnew Pen(LightRed, 2.0f);
-			else //иначе
+			else //РёРЅР°С‡Рµ
 				pA = gcnew Pen(LightGreen, 2.0f);
 		}
-		panelQuadric->Refresh();	//обновляем/перерисовываем
+		panelQuadric->Refresh();	//РѕР±РЅРѕРІР»СЏРµРј/РїРµСЂРµСЂРёСЃРѕРІС‹РІР°РµРј
 	}
 	private: System::Void BoxB_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 		if (BoxB->Text == "")
@@ -1532,23 +1532,23 @@ namespace Calc {
 		}
 		panelQuadric->Refresh();
 	}
-		   //история
+		   //РёСЃС‚РѕСЂРёСЏ
 	private: System::Void HistoryPrint()
 	{
-		//вывод истории
+		//РІС‹РІРѕРґ РёСЃС‚РѕСЂРёРё
 
-		solvedNumber++;	//кол-во решенных +1
-		solvedNum = to_string(solvedNumber);	//конверт в string
-		SolvedNumLabel->Text = msclr::interop::marshal_as<System::String^>(solvedNum);	//в String^
+		solvedNumber++;	//РєРѕР»-РІРѕ СЂРµС€РµРЅРЅС‹С… +1
+		solvedNum = to_string(solvedNumber);	//РєРѕРЅРІРµСЂС‚ РІ string
+		SolvedNumLabel->Text = msclr::interop::marshal_as<System::String^>(solvedNum);	//РІ String^
 
-		//конвертация всех данных в string
+		//РєРѕРЅРІРµСЂС‚Р°С†РёСЏ РІСЃРµС… РґР°РЅРЅС‹С… РІ string
 		string A = msclr::interop::marshal_as<std::string>(BoxA->Text);
 		string B = msclr::interop::marshal_as<std::string>(BoxB->Text);
 		string C = msclr::interop::marshal_as<std::string>(BoxC->Text);
 		string X1 = msclr::interop::marshal_as<std::string>(BoxX1->Text);
 		string X2 = msclr::interop::marshal_as<std::string>(BoxX2->Text);
 
-		//запись в вектор истории
+		//Р·Р°РїРёСЃСЊ РІ РІРµРєС‚РѕСЂ РёСЃС‚РѕСЂРёРё
 		historyNote note;
 		note.eq = "(" + A + ")x^2 + " + "(" + B + ")x + " + "(" + C + ") = 0";
 		note.x1 = X1;
@@ -1559,16 +1559,16 @@ namespace Calc {
 			note.type = "COMPLEX";
 		historyNotes.push_back(note);
 
-		//если записей еще не 6, то просто добавляем
+		//РµСЃР»Рё Р·Р°РїРёСЃРµР№ РµС‰Рµ РЅРµ 6, С‚Рѕ РїСЂРѕСЃС‚Рѕ РґРѕР±Р°РІР»СЏРµРј
 		if (historyCount != 6)
 			historyCount++;
-		else //иначе удаляем первую запись
+		else //РёРЅР°С‡Рµ СѓРґР°Р»СЏРµРј РїРµСЂРІСѓСЋ Р·Р°РїРёСЃСЊ
 			historyNotes.erase(historyNotes.begin());
-		//очищаем бокс
+		//РѕС‡РёС‰Р°РµРј Р±РѕРєСЃ
 		historyBox->Clear();
 		for (int i = 0; i < historyCount; i++)
 		{
-			//запись истории в текст бокс
+			//Р·Р°РїРёСЃСЊ РёСЃС‚РѕСЂРёРё РІ С‚РµРєСЃС‚ Р±РѕРєСЃ
 			System::String^ eqString = msclr::interop::marshal_as<System::String^>(historyNotes[i].eq);
 			System::String^ x1String = msclr::interop::marshal_as<System::String^>(historyNotes[i].x1);
 			System::String^ x2String = msclr::interop::marshal_as<System::String^>(historyNotes[i].x2);
@@ -1591,13 +1591,13 @@ namespace Calc {
 	}
 	private: System::Void ProgressTimer_Tick(System::Object^ sender, System::EventArgs^ e)
 	{
-		//анимация прогресса записи
+		//Р°РЅРёРјР°С†РёСЏ РїСЂРѕРіСЂРµСЃСЃР° Р·Р°РїРёСЃРё
 		if (!isProgress)	
 		{
 			progressOpenerPanel->Width -= 10;
 			if (progressOpenerPanel->Width == 0)
 			{
-				//печать
+				//РїРµС‡Р°С‚СЊ
 				HistoryPrint();
 				isProgress = true;
 				progressOpenerPanel->Dock = System::Windows::Forms::DockStyle::Left;
@@ -1620,14 +1620,14 @@ namespace Calc {
 		}
 		
 	}
-		   //хедер
+		   //С…РµРґРµСЂ
 	private: System::Void buttonMenu_Click(System::Object^ sender, System::EventArgs^ e)
 		{
 			HeaderTimer->Start();
 		}
 	private: System::Void HeaderTimer_Tick(System::Object^ sender, System::EventArgs^ e)
 	{
-		//открытие/закрытие левой панели
+		//РѕС‚РєСЂС‹С‚РёРµ/Р·Р°РєСЂС‹С‚РёРµ Р»РµРІРѕР№ РїР°РЅРµР»Рё
 		if (!headerIsOpen)
 		{
 			HeaderPanel->Width += 3;
@@ -1649,22 +1649,22 @@ namespace Calc {
 			}
 		}
 	}
-			//советы
+			//СЃРѕРІРµС‚С‹
 	private: System::Void TipPic_Click(System::Object^ sender, System::EventArgs^ e)
 	{
-		//рандомный совет
+		//СЂР°РЅРґРѕРјРЅС‹Р№ СЃРѕРІРµС‚
 		string tip = randomTip();
 		TipLabel->Text = msclr::interop::marshal_as<System::String^>(tip);
 	}
 	private: System::Void TipLabel_Click(System::Object^ sender, System::EventArgs^ e) {
-		TipLabel->Text = "";	//удаление совета при нажатии на него
+		TipLabel->Text = "";	//СѓРґР°Р»РµРЅРёРµ СЃРѕРІРµС‚Р° РїСЂРё РЅР°Р¶Р°С‚РёРё РЅР° РЅРµРіРѕ
 	}
-		   //смена режима
+		   //СЃРјРµРЅР° СЂРµР¶РёРјР°
 	private: System::Void complexSwitcher1_CheckedChanged(System::Object^ sender, System::EventArgs^ e)
 	{
-		//смена режима
+		//СЃРјРµРЅР° СЂРµР¶РёРјР°
 
-		//если ДЕЙСТВ.
+		//РµСЃР»Рё Р”Р•Р™РЎРўР’.
 		if (!complex)
 		{
 			complex = true;
@@ -1675,7 +1675,7 @@ namespace Calc {
 				complexSwitcher1->ForeColor = Color::Black;
 			ActiveModePanel->Location = System::Drawing::Point(518, 50);
 		}
-		//если КОМПЛ.
+		//РµСЃР»Рё РљРћРњРџР›.
 		else
 		{
 			complex = false;
@@ -1686,100 +1686,100 @@ namespace Calc {
 				complexSwitcher2->ForeColor = Color::Black;
 			ActiveModePanel->Location = System::Drawing::Point(300, 50);
 		}
-		//очищаем все боксы и обновляем панель
+		//РѕС‡РёС‰Р°РµРј РІСЃРµ Р±РѕРєСЃС‹ Рё РѕР±РЅРѕРІР»СЏРµРј РїР°РЅРµР»СЊ
 		BoxX1->Clear(); BoxX2->Clear(); boxDiscr->Clear();
 		BoxA->Text = ""; BoxB->Text = ""; BoxC->Text = "";
 		HeaderPanelUp->Refresh();
 	}
-		   //.............................Решение................................//
+		   //.............................Р РµС€РµРЅРёРµ................................//
 	private: System::Void Solve_Click(System::Object^ sender, System::EventArgs^ e)
 	{
 		//
-		// Основа программы - кнопка решения
+		// РћСЃРЅРѕРІР° РїСЂРѕРіСЂР°РјРјС‹ - РєРЅРѕРїРєР° СЂРµС€РµРЅРёСЏ
 		//
 		
-		//если ДЕЙСТВ. режим
+		//РµСЃР»Рё Р”Р•Р™РЎРўР’. СЂРµР¶РёРј
 		if (!complex)
 		{
-			if (BoxA->Text != "" && BoxB->Text != "" && BoxC->Text != "")	//проверяем на пустой ввод
+			if (BoxA->Text != "" && BoxB->Text != "" && BoxC->Text != "")	//РїСЂРѕРІРµСЂСЏРµРј РЅР° РїСѓСЃС‚РѕР№ РІРІРѕРґ
 			{
-				if (check(BoxA->Text) && check(BoxB->Text) && check(BoxC->Text))	//проверяем на ошибки ввода
+				if (check(BoxA->Text) && check(BoxB->Text) && check(BoxC->Text))	//РїСЂРѕРІРµСЂСЏРµРј РЅР° РѕС€РёР±РєРё РІРІРѕРґР°
 				{
-					//конвершируем введенные данный в string
+					//РєРѕРЅРІРµСЂС€РёСЂСѓРµРј РІРІРµРґРµРЅРЅС‹Рµ РґР°РЅРЅС‹Р№ РІ string
 					std::string As = msclr::interop::marshal_as<std::string>(BoxA->Text);
 					std::string Bs = msclr::interop::marshal_as<std::string>(BoxB->Text);
 					std::string Cs = msclr::interop::marshal_as<std::string>(BoxC->Text);
-					//и передаем их в решение brackets.h
+					//Рё РїРµСЂРµРґР°РµРј РёС… РІ СЂРµС€РµРЅРёРµ brackets.h
 					double A = eval(As);
 					double B = eval(Bs);
 					double C = eval(Cs);
-					//полученный результат передаем в функцию решения
+					//РїРѕР»СѓС‡РµРЅРЅС‹Р№ СЂРµР·СѓР»СЊС‚Р°С‚ РїРµСЂРµРґР°РµРј РІ С„СѓРЅРєС†РёСЋ СЂРµС€РµРЅРёСЏ
 					int result = solver(A, B, C);
-					//если 1 коэф. = 0, то ур. не квадратное
+					//РµСЃР»Рё 1 РєРѕСЌС„. = 0, С‚Рѕ СѓСЂ. РЅРµ РєРІР°РґСЂР°С‚РЅРѕРµ
 					if (result == -1)
 					{
-						Calc::Error ErrorScreen(nightmode, "Не квадратное уравнение");
+						Calc::Error ErrorScreen(nightmode, "РќРµ РєРІР°РґСЂР°С‚РЅРѕРµ СѓСЂР°РІРЅРµРЅРёРµ");
 						ErrorScreen.ShowDialog();
 						return;
 					}
 
-					//запись результатов
+					//Р·Р°РїРёСЃСЊ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ
 					BoxX1->Text = msclr::interop::marshal_as<System::String^>(sx1);
 					BoxX2->Text = msclr::interop::marshal_as<System::String^>(sx2);
 					boxDiscr->Text = msclr::interop::marshal_as<System::String^>(disc);
 
-					ProgressTimer->Start(); //прогресс бар и запись ответа в историю
+					ProgressTimer->Start(); //РїСЂРѕРіСЂРµСЃСЃ Р±Р°СЂ Рё Р·Р°РїРёСЃСЊ РѕС‚РІРµС‚Р° РІ РёСЃС‚РѕСЂРёСЋ
 				}
 				else
 				{
-					//тип ошибки при check
+					//С‚РёРї РѕС€РёР±РєРё РїСЂРё check
 					Calc::Error ErrorScreen(nightmode, msclr::interop::marshal_as<String^>(ErrorCheck));
 					ErrorScreen.ShowDialog();
 				}
 			}
 			else
 			{
-				Calc::Error ErrorScreen(nightmode, "Введите все значения");
+				Calc::Error ErrorScreen(nightmode, "Р’РІРµРґРёС‚Рµ РІСЃРµ Р·РЅР°С‡РµРЅРёСЏ");
 				ErrorScreen.ShowDialog();
 			}
 		}
-		//если КОМПЛ. режим
+		//РµСЃР»Рё РљРћРњРџР›. СЂРµР¶РёРј
 		else
 		{
-			if (BoxA->Text != "" && BoxB->Text != "" && BoxC->Text != "") //проверяем на пустой ввод
+			if (BoxA->Text != "" && BoxB->Text != "" && BoxC->Text != "") //РїСЂРѕРІРµСЂСЏРµРј РЅР° РїСѓСЃС‚РѕР№ РІРІРѕРґ
 			{
-				if (checkCompl(BoxA->Text) && checkCompl(BoxB->Text) && checkCompl(BoxC->Text)) //проверяем на ошибки ввода
+				if (checkCompl(BoxA->Text) && checkCompl(BoxB->Text) && checkCompl(BoxC->Text)) //РїСЂРѕРІРµСЂСЏРµРј РЅР° РѕС€РёР±РєРё РІРІРѕРґР°
 				{
-					//преобразование введенных строк в комплексные числа
+					//РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ РІРІРµРґРµРЅРЅС‹С… СЃС‚СЂРѕРє РІ РєРѕРјРїР»РµРєСЃРЅС‹Рµ С‡РёСЃР»Р°
 					TransformCompl(BoxA->Text, 'a');	
 					TransformCompl(BoxB->Text, 'b');
 					TransformCompl(BoxC->Text, 'c');
-					//и передаем их в решение brackets.h
+					//Рё РїРµСЂРµРґР°РµРј РёС… РІ СЂРµС€РµРЅРёРµ brackets.h
 					int result = solverCompl(ACompl, BCompl, CCompl);
-					//если 1 коэф. = 0, то ур. не квадратное
+					//РµСЃР»Рё 1 РєРѕСЌС„. = 0, С‚Рѕ СѓСЂ. РЅРµ РєРІР°РґСЂР°С‚РЅРѕРµ
 					if (result == -1)
 					{
-						Calc::Error ErrorScreen(nightmode, "Не квадратное уравнение");
+						Calc::Error ErrorScreen(nightmode, "РќРµ РєРІР°РґСЂР°С‚РЅРѕРµ СѓСЂР°РІРЅРµРЅРёРµ");
 						ErrorScreen.ShowDialog();
 						return;
 					}
-					//запись результатов
+					//Р·Р°РїРёСЃСЊ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ
 					BoxX1->Text = msclr::interop::marshal_as<System::String^>(sx1RCompl) + msclr::interop::marshal_as<System::String^>(sx1ICompl);
 					BoxX2->Text = msclr::interop::marshal_as<System::String^>(sx2RCompl) + msclr::interop::marshal_as<System::String^>(sx2ICompl);
 					boxDiscr->Text = msclr::interop::marshal_as<System::String^>(discrim1) + msclr::interop::marshal_as<System::String^>(discrim2);
 
-					ProgressTimer->Start(); //прогресс бар и запись ответа в историю
+					ProgressTimer->Start(); //РїСЂРѕРіСЂРµСЃСЃ Р±Р°СЂ Рё Р·Р°РїРёСЃСЊ РѕС‚РІРµС‚Р° РІ РёСЃС‚РѕСЂРёСЋ
 				}
 				else
 				{
-					//тип ошибки при checkCompl
+					//С‚РёРї РѕС€РёР±РєРё РїСЂРё checkCompl
 					Calc::Error ErrorScreen(nightmode, msclr::interop::marshal_as<String^>(ErrorCheckCompl));
 					ErrorScreen.ShowDialog();
 				}
 			}
 			else
 			{
-				Calc::Error ErrorScreen(nightmode, "Введите все значения");
+				Calc::Error ErrorScreen(nightmode, "Р’РІРµРґРёС‚Рµ РІСЃРµ Р·РЅР°С‡РµРЅРёСЏ");
 				ErrorScreen.ShowDialog();
 			}
 		}
