@@ -10,8 +10,8 @@ namespace Calc {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для Error
-	/// </summary>
+	/// Г‘ГўГ®Г¤ГЄГ  Г¤Г«Гї Error
+	/// </summary> 
 	public ref class Error : public System::Windows::Forms::Form
 	{
 	public:
@@ -62,8 +62,8 @@ namespace Calc {
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// Г’Г°ГҐГЎГіГҐГ¬Г»Г© Г¬ГҐГІГ®Г¤ Г¤Г«Гї ГЇГ®Г¤Г¤ГҐГ°Г¦ГЄГЁ ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°Г  вЂ” Г­ГҐ ГЁГ§Г¬ГҐГ­ГїГ©ГІГҐ 
+		/// Г±Г®Г¤ГҐГ°Г¦ГЁГ¬Г®ГҐ ГЅГІГ®ГЈГ® Г¬ГҐГІГ®Г¤Г  Г± ГЇГ®Г¬Г®Г№ГјГѕ Г°ГҐГ¤Г ГЄГІГ®Г°Г  ГЄГ®Г¤Г .
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -145,7 +145,7 @@ namespace Calc {
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(108, 30);
 			this->label2->TabIndex = 43;
-			this->label2->Text = L"Ошибка";
+			this->label2->Text = L"ГЋГёГЁГЎГЄГ ";
 			// 
 			// Error
 			// 
