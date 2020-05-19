@@ -4,14 +4,14 @@
 #include <math.h>
 #include <string>
 
-double eval(std::string s); //ïåğåâîä ñòğîêè â ìàññèâ char è ğåøåíèå
-double number(char*);       //âû÷ëåíåíèå ÷èñëî è åãî çíàêà
-double expression(char*);   //ïîëíîå âû÷èñëåíèå ğåçóëüòàòà
-double term(char*);         //îïåğàöèè * è /
-double brackets(char*);     //âûïîëíåíèå ğàñ÷åòîâ â ñêîáêàú
+double eval(std::string s); //Ğ¿ĞµÑ€ĞµĞ²Ğ¾Ğ´ ÑÑ‚Ñ€Ğ¾ĞºĞ¸ Ğ² Ğ¼Ğ°ÑÑĞ¸Ğ² char Ğ¸ Ñ€ĞµÑˆĞµĞ½Ğ¸Ğµ
+double number(char*);       //Ğ²Ñ‹Ñ‡Ğ»ĞµĞ½ĞµĞ½Ğ¸Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾ Ğ¸ ĞµĞ³Ğ¾ Ğ·Ğ½Ğ°ĞºĞ°
+double expression(char*);   //Ğ¿Ğ¾Ğ»Ğ½Ğ¾Ğµ Ğ²Ñ‹Ñ‡Ğ¸ÑĞ»ĞµĞ½Ğ¸Ğµ Ñ€ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚Ğ°
+double term(char*);         //Ğ¾Ğ¿ĞµÑ€Ğ°Ñ†Ğ¸Ğ¸ * Ğ¸ /
+double brackets(char*);     //Ğ²Ñ‹Ğ¿Ğ¾Ğ»Ğ½ĞµĞ½Ğ¸Ğµ Ñ€Ğ°ÑÑ‡ĞµÑ‚Ğ¾Ğ² Ğ² ÑĞºĞ¾Ğ±ĞºĞ°ÑŠ
 
-std::string ErrorB;     //îøèáêà
-int symb;               //ñ÷åò÷èê ñèìâîëîâ
+std::string ErrorB;     //Ğ¾ÑˆĞ¸Ğ±ĞºĞ°
+int symb;               //ÑÑ‡ĞµÑ‚Ñ‡Ğ¸Ğº ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ¾Ğ²
 
 double eval(std::string s)
 {
@@ -31,20 +31,20 @@ double number(char* str)
 
     if (str[symb] == '-')
     {
-        sign = -1;          //ïîëó÷åíèå çíàêà ÷èñëà
+        sign = -1;          //Ğ¿Ğ¾Ğ»ÑƒÑ‡ĞµĞ½Ğ¸Ğµ Ğ·Ğ½Ğ°ĞºĞ° Ñ‡Ğ¸ÑĞ»Ğ°
         symb++;
     }
 
     while (str[symb] >= '0' && str[symb] <= '9')
     {
-        result = result * 10 + (str[symb] - '0');   //âû÷ëåíåíèå ÷èñëà èç ìàññèâà
+        result = result * 10 + (str[symb] - '0');   //Ğ²Ñ‹Ñ‡Ğ»ĞµĞ½ĞµĞ½Ğ¸Ğµ Ñ‡Ğ¸ÑĞ»Ğ° Ğ¸Ğ· Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ°
         symb++;
     }
 
     if (str[symb] == '.')
     {
         symb++;
-        while (str[symb] >= '0' && str[symb] <= '9')    //äîáàâëåíèå ìàíòèññû
+        while (str[symb] >= '0' && str[symb] <= '9')    //Ğ´Ğ¾Ğ±Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ğµ Ğ¼Ğ°Ğ½Ñ‚Ğ¸ÑÑÑ‹
         {
             result = result + (str[symb] - '0') / div;
             div *= 10;
@@ -96,7 +96,7 @@ double term(char* str)
                 result /= div;
             else
             {
-                ErrorB = "Äåëåíèå íà 0";
+                ErrorB = "Ğ”ĞµĞ»ĞµĞ½Ğ¸Ğµ Ğ½Ğ° 0";
                 return -1;
             }
         }
@@ -120,7 +120,7 @@ double brackets(char* str)
         result = expression(str);
         if (str[symb] != ')')
         {
-            ErrorB = "Ïğîâåğüòå ñêîáêè";
+            ErrorB = "ĞŸÑ€Ğ¾Ğ²ĞµÑ€ÑŒÑ‚Ğµ ÑĞºĞ¾Ğ±ĞºĞ¸";
             return -1;
         }
         symb++;
