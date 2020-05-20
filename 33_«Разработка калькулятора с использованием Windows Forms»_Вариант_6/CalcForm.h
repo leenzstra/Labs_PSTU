@@ -1496,7 +1496,7 @@ namespace Calc {
 		if (BoxB->Text == "")
 			pB = gcnew Pen(LightPurple, 2.0f);
 
-		if (!complex)
+		else if (!complex)
 		{
 			if (!check(BoxB->Text))
 				pB = gcnew Pen(LightRed, 2.0f);
@@ -1516,7 +1516,7 @@ namespace Calc {
 		if (BoxC->Text == "")
 			pC = gcnew Pen(LightPurple, 2.0f);
 
-		if (!complex)
+		else if (!complex)
 		{
 			if (!check(BoxC->Text))
 				pC = gcnew Pen(LightRed, 2.0f);
