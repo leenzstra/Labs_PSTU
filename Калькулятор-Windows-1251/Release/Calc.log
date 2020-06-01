@@ -1,0 +1,9 @@
+﻿  CalcForm.cpp
+C:\Users\leenz\Desktop\33.Калькулятор-Windows-1251\complexCoeff.h(24,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\leenz\Desktop\33.Калькулятор-Windows-1251\complexCoeff.h(117,14): warning C4018: <: несоответствие типов со знаком и без знака
+  Error.cpp
+  SplashScreen.cpp
+  .NETFramework,Version=v4.6.1.AssemblyAttributes.cpp
+  Создание кода...
+  CalcForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Calc.vcxproj -> C:\Users\leenz\Desktop\33.Калькулятор-Windows-1251\Release\Calc.exe

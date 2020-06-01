@@ -1,0 +1,6 @@
+C:\Users\leenz\Desktop\VSproj\Commiv\Debug\Commiv.exe
+C:\Users\leenz\Desktop\VSproj\Commiv\Debug\Commiv.pdb
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\Debug\Commiv.exe
+C:\Users\leenz\Desktop\VSproj\32_ЗадачаКоммивояжера_Вариант_6\Debug\Commiv.pdb
+C:\Users\leenz\Desktop\32. Коммивояжер\Debug\Commiv.exe
+C:\Users\leenz\Desktop\32. Коммивояжер\Debug\Commiv.pdb

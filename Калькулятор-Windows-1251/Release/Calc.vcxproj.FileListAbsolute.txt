@@ -1,0 +1,25 @@
+C:\Users\leenz\Desktop\VSproj\Calc\Release\Calc.vcxprojAssemblyReference.cache
+C:\Users\leenz\Desktop\VSproj\Calc\Release\Calc.CalcForm.resources
+C:\Users\leenz\Desktop\VSproj\Calc\Release\Calc.SplashScreen.resources
+C:\Users\leenz\Desktop\VSproj\Calc\Release\Calc.vcxproj.GenerateResource.cache
+C:\Users\leenz\Desktop\VSproj\Calc\Release\Calc.exe
+C:\Users\leenz\Desktop\VSproj\Calc\Release\Calc.Error.resources
+C:\Users\leenz\Desktop\VSproj\Calc\Release\Calc.Resources.resources
+C:\Users\leenz\Desktop\VSproj\33. Творческая работа «Разработка калькулятора с использованием Windows Forms»_Вариант_6\Release\Calc.vcxprojAssemblyReference.cache
+C:\Users\leenz\Desktop\VSproj\33. Творческая работа «Разработка калькулятора с использованием Windows Forms»_Вариант_6\Release\Calc.CalcForm.resources
+C:\Users\leenz\Desktop\VSproj\33. Творческая работа «Разработка калькулятора с использованием Windows Forms»_Вариант_6\Release\Calc.Error.resources
+C:\Users\leenz\Desktop\VSproj\33. Творческая работа «Разработка калькулятора с использованием Windows Forms»_Вариант_6\Release\Calc.SplashScreen.resources
+C:\Users\leenz\Desktop\VSproj\33. Творческая работа «Разработка калькулятора с использованием Windows Forms»_Вариант_6\Release\Calc.vcxproj.GenerateResource.cache
+C:\Users\leenz\Desktop\VSproj\33. Творческая работа «Разработка калькулятора с использованием Windows Forms»_Вариант_6\Release\Calc.exe
+C:\Users\leenz\Desktop\VSproj\33_«Разработка калькулятора с использованием Windows Forms»_Вариант_6\Release\Calc.vcxprojAssemblyReference.cache
+C:\Users\leenz\Desktop\VSproj\33_«Разработка калькулятора с использованием Windows Forms»_Вариант_6\Release\Calc.CalcForm.resources
+C:\Users\leenz\Desktop\VSproj\33_«Разработка калькулятора с использованием Windows Forms»_Вариант_6\Release\Calc.Error.resources
+C:\Users\leenz\Desktop\VSproj\33_«Разработка калькулятора с использованием Windows Forms»_Вариант_6\Release\Calc.SplashScreen.resources
+C:\Users\leenz\Desktop\VSproj\33_«Разработка калькулятора с использованием Windows Forms»_Вариант_6\Release\Calc.vcxproj.GenerateResource.cache
+C:\Users\leenz\Desktop\VSproj\33_«Разработка калькулятора с использованием Windows Forms»_Вариант_6\Release\Calc.exe
+C:\Users\leenz\Desktop\33.Калькулятор-Windows-1251\Release\Calc.vcxprojAssemblyReference.cache
+C:\Users\leenz\Desktop\33.Калькулятор-Windows-1251\Release\Calc.CalcForm.resources
+C:\Users\leenz\Desktop\33.Калькулятор-Windows-1251\Release\Calc.Error.resources
+C:\Users\leenz\Desktop\33.Калькулятор-Windows-1251\Release\Calc.SplashScreen.resources
+C:\Users\leenz\Desktop\33.Калькулятор-Windows-1251\Release\Calc.vcxproj.GenerateResource.cache
+C:\Users\leenz\Desktop\33.Калькулятор-Windows-1251\Release\Calc.exe
